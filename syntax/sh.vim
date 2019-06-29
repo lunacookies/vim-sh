@@ -17,6 +17,9 @@ hi def link shShebang PreProc
 syn match shOperator '||'
 syn match shOperator '&&'
 
+" Match semicolons as Delimiter rather than Operator
+syn match shSemicolon ';' containedin=shOperator
+
 " Special files as Constants
 syn match Constant "/dev/null" containedin=shFunctionOne,shIf,shCmdParenRegion,shCommandSub
 
