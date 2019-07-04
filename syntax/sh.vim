@@ -1,5 +1,5 @@
 " Shebang
-syn match shShebang "\v#!.*$"
+syn match shShebang "^#!.*$" containedin=shComment
 
 " Operators
 syn match shOperator '||'
