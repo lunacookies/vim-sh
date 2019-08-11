@@ -23,6 +23,7 @@ hi def link bashSpecialVariables Identifier
 hi def link shCmdSubRegion Delimiter
 hi def link shDerefSimple Identifier
 hi def link shFor Identifier
+hi def link shFunctionKey Statement
 hi def link shQuote StringDelimiter
 hi def link shRange Delimiter
 hi def link shSnglCase Delimiter
