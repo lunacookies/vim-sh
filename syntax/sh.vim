@@ -35,6 +35,7 @@ hi def link shRange Delimiter
 hi def link shSnglCase Delimiter
 hi def link shTestOpr Special
 hi def link shVarAssign Operator
+hi def link zshDelimiter Delimiter
 hi def link zshDeref Identifier
 hi def link zshFunction Function
 hi def link zshOperator Operator
