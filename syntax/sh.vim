@@ -13,6 +13,9 @@ syn match zshDelim '\v(\(|\))' containedin=zshParentheses
 syn match zshDelim '\v(\{|\})' containedin=zshBraces
 syn match zshDelim '\v(\[|\])' containedin=zshParentheses
 
+" Match command flags in zsh
+syn match zshFlag "\v<-\w+" containedin=zshBrackets,zshParentheses
+
 " Special files as Constants
 syn match Constant "\v/dev/\w+"
             \ containedin=shFunctionOne,shIf,shCmdParenRegion,shCommandSub
@@ -49,3 +52,4 @@ hi def link zshVariableDef Identifier
 hi def link shSemicolon Delimiter
 hi def link shShebang PreProc
 hi def link zshDelim Delimiter
+hi def link zshFlag Special
