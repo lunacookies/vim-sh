@@ -8,9 +8,10 @@ syn match shOperator '&&'
 " Match semicolons as Delimiter rather than Operator
 syn match shSemicolon ';' containedin=shOperator,zshOperator
 
-" Highlight braces and parens as Delimiters in zsh
+" Highlight braces, brackets and parens as Delimiters in zsh
 syn match zshDelim '\v(\(|\))' containedin=zshParentheses
 syn match zshDelim '\v(\{|\})' containedin=zshBraces
+syn match zshDelim '\v(\[|\])' containedin=zshParentheses
 
 " Special files as Constants
 syn match Constant "\v/dev/\w+" containedin=shFunctionOne,shIf,shCmdParenRegion,shCommandSub
