@@ -26,7 +26,7 @@ let commands = [ 'arch', 'b2sum', 'base32', 'base64', 'basename', 'basenc', 'bas
 for i in commands
     execute 'syn match shStatement "\v(\w|-)@<!'
                 \ . i
-                \ . '(\w|-)@!" containedin=shFunctionOne,shIf,shCmdParenRegion,shCommandSub'
+                \ . '(\w|-)@!" containedin=shFunctionOne,shIf,shCmdParenRegion,shCommandSub,zshBrackets'
 endfor
 
 " Fix default highlighting groups
@@ -38,6 +38,7 @@ hi def link shFunctionKey Statement
 hi def link shQuote StringDelimiter
 hi def link shRange Delimiter
 hi def link shSnglCase Delimiter
+hi def link shStatement Statement
 hi def link shTestOpr Special
 hi def link shVarAssign Operator
 hi def link zshDeref Identifier
