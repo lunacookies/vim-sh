@@ -9,8 +9,8 @@ syn match shOperator '&&'
 syn match shSemicolon ';' containedin=shOperator,zshOperator
 
 " Highlight braces and parens as Delimiters in zsh
-syn match zshDelimiter '\v(\(|\))' containedin=zshParentheses
-syn match zshDelimiter '\v(\{|\})' containedin=zshBraces
+syn match zshDelim '\v(\(|\))' containedin=zshParentheses
+syn match zshDelim '\v(\{|\})' containedin=zshBraces
 
 " Special files as Constants
 syn match Constant "\v/dev/\w+" containedin=shFunctionOne,shIf,shCmdParenRegion,shCommandSub
@@ -35,7 +35,6 @@ hi def link shRange Delimiter
 hi def link shSnglCase Delimiter
 hi def link shTestOpr Special
 hi def link shVarAssign Operator
-hi def link zshDelimiter Delimiter
 hi def link zshDeref Identifier
 hi def link zshFunction Function
 hi def link zshOperator Operator
@@ -45,5 +44,6 @@ hi def link zshSubstDelim Delimiter
 hi def link zshVariableDef Identifier
 
 " Link custom groups
-hi def link shShebang PreProc
 hi def link shSemicolon Delimiter
+hi def link shShebang PreProc
+hi def link zshDelim Delimiter
