@@ -39,7 +39,7 @@ hi def link shQuote StringDelimiter
 hi def link shRange Delimiter
 hi def link shSnglCase Delimiter
 hi def link shStatement Statement
-hi def link shTestOpr Special
+hi def link shTestOpr Operator
 hi def link shVarAssign Operator
 hi def link zshDeref Identifier
 hi def link zshFunction Function
