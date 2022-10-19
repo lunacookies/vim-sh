@@ -1,3 +1,6 @@
+let s:keepcpo          = &cpo
+set cpo&vim
+
 " Shebang
 syn match shShebang "^#!.*$" containedin=shComment
 
@@ -54,3 +57,6 @@ hi def link shSemicolon Delimiter
 hi def link shShebang PreProc
 hi def link zshDelim Delimiter
 hi def link zshFlag Special
+
+let &cpo= s:keepcpo
+unlet s:keepcpo
